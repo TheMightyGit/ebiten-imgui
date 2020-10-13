@@ -66,6 +66,6 @@ func NewCache() TextureCache {
 		fontAtlasID:    1,
 		cache:          make(map[imgui.TextureID]*ebiten.Image),
 		fontAtlasImage: nil,
-		dfilter:        ebiten.FilterDefault,
+		// dfilter:        ebiten.FilterDefault,
 	}
 }

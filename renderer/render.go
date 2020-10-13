@@ -115,7 +115,7 @@ func vmultiply(v, vbuf []ebiten.Vertex, bmin, bmax image.Point) {
 func getTexture(tex *imgui.RGBA32Image, filter ebiten.Filter) *ebiten.Image {
 	n := tex.Width * tex.Height
 	pix := (*[1 << 28]uint8)(tex.Pixels)[: n*4 : n*4]
-	img, _ := ebiten.NewImage(tex.Width, tex.Height, filter)
+	img := ebiten.NewImage(tex.Width, tex.Height)
 	img.ReplacePixels(pix)
 	return img
 }
