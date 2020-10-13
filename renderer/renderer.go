@@ -3,7 +3,7 @@ package renderer
 import (
 	"runtime"
 
-	"github.com/hajimehoshi/ebiten"
+	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/inkyblackness/imgui-go/v2"
 )
 
